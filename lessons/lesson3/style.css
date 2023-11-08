@@ -1,0 +1,33 @@
+*{
+    margin: 0; /*внешний отступ*/
+    padding: 0;
+} /*это обнуление стилей*/
+
+.top{
+    padding-bottom: 99px;
+}
+.header{
+    padding-top: 39px;
+    padding-bottom: 39px;
+    /*padding-right: 755px;
+    padding-left: 754px;
+    */
+}
+.content{
+    margin-top: 160px;
+    margin-bottom: 197px;
+}
+.subtitle{
+    margin-bottom: 10;
+
+}
+.logo{
+    margin-bottom: 99px;
+}
+.title{
+    margin-bottom: 40px;
+}
+
+.buttons{
+    margin-top: 50px;
+}
