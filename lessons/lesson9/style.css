@@ -1,0 +1,25 @@
+a {
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: red;
+}
+.menu__link:active {
+    color: green;
+}
+.menu__list:first-child {
+    text-decoration: underline;
+}
+.menu__list:last-child .menu__link {
+    font-weight: bold;
+}
+.menu__list:nth-child(3) .menu__link {
+    background-color: orange;
+}
+.svg_test:hover {
+    fill: purple;
+}
+.svg_test:active {
+    fill: yellow;
+}
