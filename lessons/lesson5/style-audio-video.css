@@ -1,0 +1,17 @@
+.audio{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100vh;
+    /* margin-bottom: 32px; */
+}
+video {
+    display: flex;
+    justify-content: center;
+}
+audio {
+
+}
+video {
+    height: 100vh;
+}
