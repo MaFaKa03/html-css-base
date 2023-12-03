@@ -1,0 +1,36 @@
+@import 'vars';
+@import 'mixins';
+// $gap-in-nav: 40px;
+// $width-site: 1200px;
+// $color-site-text: #8A2BE2;
+// $width-item: calc(0.25 * $width-site);
+// $border-for-item: 1px solid #000000;
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+.container {
+    width: $width-site;
+}
+.preprocessor {
+    color: $color-site-text;
+}
+.nav {
+    display: flex;
+    gap: $gap-in-nav;
+    &__link{
+        @extend %fons;
+        text-decoration: none;
+    }
+}
+.content {
+    @include flex;
+    gap: $gap-in-nav;
+    &__item {
+        width: $width-item;
+        height: 200px;
+        border: $border-for-item;
+    }
+}
