@@ -1,0 +1,257 @@
+@import 'header';
+@import 'footer';
+@import 'center';
+@import 'items';
+@import 'subscribe';
+
+$color-pink: #F16D7F;
+
+img {
+    max-width: 100%;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading__product {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 230px;
+    padding-right: 230px;
+    background-color: #F8F3F4;
+}
+
+.new_arrivals {
+    color: $color-pink;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 59px;
+    margin-bottom: 60px;
+}
+
+.heading__product_nav {
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.nav__item {
+    color: #636363;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.nav__item::after {
+    content: ' / ';
+}
+
+.item__new::after {
+    content: '';
+}
+
+.item__new {
+    color: $color-pink;
+}
+
+.slide {
+    height: 777px;
+    position: relative;
+    background: #F7F7F7;
+    display: flex;
+    justify-content: center;
+
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 600px;
+    margin-right: 0;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #2A2A2A26;
+    margin: 20px;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+    width: 2%;
+}
+
+.container_for_card {
+    display: flex;
+    justify-content: center;
+}
+
+.card__product {
+    position: relative;
+    background-color: white;
+    margin-top: -65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1140px;
+    // margin-left: 230px;
+    // margin-right: 230px;
+    border: 1px solid #EAEAEA;
+    margin-bottom: 130px;
+
+}
+
+.women__collections {
+    color: $color-pink;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 64px;
+    margin-bottom: 12px;
+    // border-bottom:3px 63px solid #EF5B70 ;
+}
+
+.hr-under-women {
+    background: none;
+    background-color: #EF5B70;
+    height: 3px;
+    width: 63px;
+}
+
+.name__product {
+    color: #4D4D4D;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 49px;
+}
+
+.about__product {
+    color: #5E5E5E;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 32px;
+
+    width: 555px;
+    height: 51.431px;
+
+    // display: flex;
+}
+
+.cost_product {
+    color: #EF5B70;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.hr-under-cost {
+    height: 0px;
+    width: 641px;
+    background: none;
+    background-color: #EAEAEA;
+    margin-bottom: 65px;
+}
+
+.nav__setings {
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    gap: 42px;
+    justify-content: center;
+    margin-bottom: 49px;
+}
+
+.nav__item__setings {
+    position: relative;
+}
+
+.summary_setings {
+    display: flex;
+    // flex-direction: column;
+    // align-items: center;
+}
+
+.summary_setings::after {
+    margin-left: 9px;
+    content: url(image-product/Vector.png);
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.setings-content {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid #6F6E6E;
+}
+
+.button__add {
+    padding: 15px 57px 9px 24px;
+    border: 1px solid #FF6A6A;
+    margin-bottom: 65px;
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    gap: 23px;
+    transition-duration: 3s;
+}
+
+.button__add:hover {
+    box-shadow: 0 0 5px #000000;
+    transform: scale(150%,150%);
+    
+}
+
+.content {
+    margin-bottom: 128px;
+}
