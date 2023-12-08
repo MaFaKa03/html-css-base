@@ -1,0 +1,12 @@
+.main__details{
+    &[open] &__svg{
+         
+            transform: rotate(90deg);
+        
+    }
+    &__summary {
+        display: block;
+        // display: none;
+        background-color: rgb(215, 167, 167);
+    }
+}

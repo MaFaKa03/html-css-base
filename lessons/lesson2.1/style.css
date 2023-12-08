@@ -1,0 +1,7 @@
+.main__details[open] .main__details__svg {
+  transform: rotate(90deg);
+}
+.main__details__summary {
+  display: block;
+  background-color: rgb(215, 167, 167);
+}/*# sourceMappingURL=style.css.map */
