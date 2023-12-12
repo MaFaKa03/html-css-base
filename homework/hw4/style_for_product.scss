@@ -3,71 +3,10 @@
 @import 'center';
 @import 'items';
 @import 'subscribe';
+@import 'heading-product';
+@import 'vars';
+@import 'base';
 
-$color-pink: #F16D7F;
-
-img {
-    max-width: 100%;
-}
-
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-.heading__product {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 230px;
-    padding-right: 230px;
-    background-color: #F8F3F4;
-}
-
-.new_arrivals {
-    color: $color-pink;
-    font-family: Lato;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 59px;
-    margin-bottom: 60px;
-}
-
-.heading__product_nav {
-    margin-top: 65px;
-    margin-bottom: 65px;
-}
-
-.nav__item {
-    color: #636363;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.nav__item::after {
-    content: ' / ';
-}
-
-.item__new::after {
-    content: '';
-}
-
-.item__new {
-    color: $color-pink;
-}
 
 .slide {
     height: 777px;
@@ -93,17 +32,25 @@ a {
     transition: transform .6s ease-in-out;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #2A2A2A26;
-    margin: 20px;
 
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M9.2998 23.2499L17.0498 15.4999L9.2998 7.7499L10.8498 4.6499L21.6998 15.4999L10.8498 26.3499L9.2998 23.2499Z" fill="black" /></svg>');
+    // background-color: #2A2A2A26;
+    // margin: 20px;
+
+}
+
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z" fill="black" /></svg>');
 }
 
 .carousel-control-prev,
 .carousel-control-next {
+    background-color: #2A2A2A26;
+    margin-top: 365px;
     opacity: 1;
-    width: 2%;
+    width: 47px;
+    height: 47px;
 }
 
 .container_for_card {
@@ -143,6 +90,8 @@ a {
     background-color: #EF5B70;
     height: 3px;
     width: 63px;
+    opacity:1;
+    border:0;
 }
 
 .name__product {
@@ -181,7 +130,7 @@ a {
 }
 
 .hr-under-cost {
-    height: 0px;
+    height: 1px;
     width: 641px;
     background: none;
     background-color: #EAEAEA;
@@ -231,7 +180,7 @@ summary::-webkit-details-marker {
 }
 
 .button__add {
-    padding: 15px 57px 9px 24px;
+    padding: 13px 43px;
     border: 1px solid #FF6A6A;
     margin-bottom: 65px;
     color: #F26376;
@@ -242,14 +191,15 @@ summary::-webkit-details-marker {
     line-height: normal;
     text-align: center;
     display: flex;
+    align-items: center;
     gap: 23px;
-    transition-duration: 3s;
+    transition-duration: .3s;
 }
 
 .button__add:hover {
     box-shadow: 0 0 5px #000000;
-    transform: scale(150%,150%);
-    
+    transform: scale(102%);
+
 }
 
 .content {

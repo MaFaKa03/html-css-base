@@ -7,17 +7,18 @@
   }
   .item {
     position: relative;
-  }
-  .item:hover .image_item{
-    filter: brightness(0.5);
-  }
-  .item:hover .div_for_item2{
-    filter: brightness(0.5);
-  }
-  .item:hover .product_add {
-    display: flex;
-  
-  }
+
+    &:hover .image_item{
+      filter: brightness(0.5);
+    }
+    &:hover .div_for_item2{
+      filter: brightness(0.5);
+    }
+    &:hover .product_add {
+      display: flex;
+    
+    } 
+ }
   .image_item {
     width: 100%;
   
