@@ -1,0 +1,47 @@
+@import 'vars';
+.heading__product {
+    display: flex;
+    justify-content: space-between;
+    // padding-left: 230px;
+    // padding-right: 230px;
+    background-color: #F8F3F4;
+}
+
+.new_arrivals {
+    color: $color-pink;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 59px;
+    margin-bottom: 60px;
+}
+
+.heading__product_nav {
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.nav__item {
+    color: #636363;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+
+    &::after {
+        content: ' / ';
+    }
+}
+
+
+.item__new {
+    color: $color-pink;
+    
+    &::after {
+    content: ' ';
+}
+}

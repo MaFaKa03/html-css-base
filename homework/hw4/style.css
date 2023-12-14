@@ -60,14 +60,13 @@
   height: 32px;
   background-color: white;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .link_social:hover {
   background-color: #F16D7F;
-}
-
-.logo_social_media {
-  margin-top: 8px;
 }
 
 .center {
@@ -86,15 +85,12 @@
 .item {
   position: relative;
 }
-
 .item:hover .image_item {
   filter: brightness(0.5);
 }
-
 .item:hover .div_for_item2 {
   filter: brightness(0.5);
 }
-
 .item:hover .product_add {
   display: flex;
 }
@@ -176,8 +172,6 @@
   position: relative;
   padding-top: 97px;
   padding-bottom: 126px;
-  padding-left: 229px;
-  padding-right: 230px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -263,7 +257,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  border-radius: 15px 0 0 15px;
+  border-radius: 50px 0 0 50px;
   width: 256px;
   height: 49px;
 }
@@ -279,9 +273,18 @@
   font-weight: 400;
   line-height: normal;
   padding: 7px 7px 6px 8px;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 50px 50px 0;
   width: 100px;
   height: 49px;
+}
+
+img {
+  max-width: 100%;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 * {
@@ -289,18 +292,47 @@
   padding: 0;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-}
-
 a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  overflow-clip-margin: content-box;
-  overflow: clip;
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto";
+}
+
+.conditions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #222224;
+  padding-top: 103px;
+  padding-bottom: 104px;
+}
+
+.condition {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.title_conditions {
+  color: #fbfbfb;
+  font-size: 19.96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text_conditions {
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 13.972px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .top {
@@ -469,40 +501,6 @@ img {
   font-weight: 400;
   line-height: normal;
   padding-top: 15px;
-}
-
-.conditions {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  background-color: #222224;
-  padding-top: 103px;
-  padding-bottom: 104px;
-}
-
-.condition {
-  width: 360px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-.title_conditions {
-  color: #fbfbfb;
-  font-size: 19.96px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.text_conditions {
-  color: #fbfbfb;
-  text-align: center;
-  font-size: 13.972px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
