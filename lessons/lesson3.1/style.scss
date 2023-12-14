@@ -1,0 +1,27 @@
+h1 {
+    font-family: 'open_sansregular';
+
+}
+
+p {
+    font-family: 'merriweatherregular';
+
+}
+
+h2 {
+    color: white;
+    -webkit-text-stroke: 1px blue;
+}
+
+.triangle {
+    // height: 300px;
+    // width: 300px;
+
+    // border: 5px solid black;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 100px;
+    border-left-width: 100px;
+    border-bottom: 100px solid black;
+}
