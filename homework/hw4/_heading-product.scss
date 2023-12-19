@@ -32,16 +32,19 @@
     line-height: normal;
 
 
-    &::after {
+    &:not(:last-child)::after {
         content: ' / ';
     }
+    // &:last-child::after {
+    //     content: '';
+    // }
 }
 
 
-.item__new {
-    color: $color-pink;
+// .item__new {
+//     color: $color-pink;
     
-    &::after {
-    content: ' ';
-}
-}
+//     &::after {
+//     content: ' ';
+// }
+// }

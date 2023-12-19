@@ -308,15 +308,8 @@
   font-weight: 300;
   line-height: normal;
 }
-.nav__item::after {
+.nav__item:not(:last-child)::after {
   content: " / ";
-}
-
-.item__new {
-  color: #F16D7F;
-}
-.item__new::after {
-  content: " ";
 }
 
 img {
