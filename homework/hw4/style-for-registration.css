@@ -31,6 +31,10 @@
   gap: 33px;
 }
 
+.link-menu:hover svg path {
+  fill: #F16D7F;
+}
+
 .footer_site {
   background-color: #222224;
   display: flex;
@@ -311,6 +315,14 @@
 .nav__item:not(:last-child)::after {
   content: " / ";
 }
+.nav__item:last-child {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
 img {
   max-width: 100%;
@@ -360,7 +372,7 @@ body {
   flex-direction: column;
 }
 .registration-container__registration__form-text_input {
-  width: 359px;
+  width: 341px;
   height: 44px;
   border: 1px solid #6F6E6E;
   color: #6F6E6E;
@@ -378,12 +390,22 @@ body {
   margin-bottom: 34px;
 }
 .registration-container__registration__form-radio_input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+  display: none;
 }
-.registration-container__registration__form-radio input[type=radio]:checked + label::before {
-  background: url(image/checked.svg) 0 0 no-repeat;
+.registration-container__registration__form-radio_input:checked + label::before {
+  content: "";
+  background-image: url(image/checked.svg);
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+}
+.registration-container__registration__form-radio_input + label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .registration-container__registration__form-radio_sex {
   color: #000;
@@ -393,26 +415,14 @@ body {
   font-weight: 300;
   line-height: normal;
   margin-right: 10px;
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  padding-left: 25px;
-  margin-right: 0;
-  line-height: 18px;
 }
 .registration-container__registration__form-radio_sex::before {
   content: "";
   display: inline-block;
   width: 17px;
   height: 17px;
-  left: 0;
-  bottom: 1px;
-  bottom: 1px;
-  position: absolute;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><circle cx="8.5" cy="8.5" r="8" stroke="%23A4A4A4"/></svg>') 0 0 no-repeat;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><circle cx="8.5" cy="8.5" r="8" stroke="%23A4A4A4"/></svg>');
+  border-radius: 50%;
 }
 .registration-container__registration_requirements {
   color: #6F6E6E;
@@ -438,6 +448,14 @@ body {
   padding-left: 29px;
   background-color: #F16D7F;
   width: 138px;
+}
+.registration-container__registration_button:hover {
+  color: #F16D7F;
+  background-color: white;
+  border: 1px solid #F16D7F;
+}
+.registration-container__registration_button:hover svg path {
+  fill: #F16D7F;
 }
 .registration-container__registration_svg {
   margin-top: 5px;
@@ -472,7 +490,85 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  display: flex;
 }
 .registration-container__loyalty__causes_svg {
   margin-right: 24px;
+}
+
+.span-test {
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding-left: 32px;
+    padding-right: 42px;
+  }
+  .heading__product {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .nav-catalog {
+    margin-left: 243px;
+  }
+  .conditions {
+    flex-direction: column;
+  }
+  .registration-container {
+    margin-left: 16px;
+    margin-right: 16px;
+    gap: 22px;
+  }
+  .registration-container__loyalty_title {
+    font-size: 16px;
+  }
+  .registration-container__loyalty_about {
+    font-size: 16px;
+  }
+  .registration-container__loyalty__causes_cause {
+    font-size: 16px;
+  }
+  .cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart__item {
+    width: 734px;
+  }
+  .cart__item__cross {
+    margin-left: 390px;
+  }
+  .cart__buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 48px;
+  }
+  .cart__payment-and-adress {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .cart__payment-and-adress__checkout {
+    margin-top: 40px;
+  }
+  .subscribe_and_review {
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 140px;
+  }
+  .footer_site {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .span-test {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style-for-registration.css.map */
