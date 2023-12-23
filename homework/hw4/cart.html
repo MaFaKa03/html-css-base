@@ -36,7 +36,7 @@
       </div>
 
       <div class="button_menu">
-        <a class="image_menu" href="#"
+        <a class="image_menu link-menu" href="#"
           ><svg
             width="32"
             height="23"
@@ -50,7 +50,7 @@
             />
           </svg>
         </a>
-        <a class="image_profile" href="#"
+        <a class="image_profile link-menu" href="registration.html"
           ><svg
             width="29"
             height="29"
@@ -64,7 +64,7 @@
             />
           </svg>
         </a>
-        <a class="image_cart" href="#"
+        <a class="image_cart link-menu" href="cart.html"
           ><svg
             width="32"
             height="29"
@@ -144,9 +144,10 @@
         </div>
       </div>
       <div class="cart__payment-and-adress">
-        <span class="cart__payment-and-adress__title"> SHIPPING ADRESS </span>
         <form action="#">
+        <div class="cart__payment-and-adress_label-title"> SHIPPING ADRESS </div>
           <input
+          name="form"
             type="text"
             required
             class="cart__payment-and-adress__form"
@@ -167,9 +168,10 @@
             placeholder="Postcode / Zip"
           />
           <br />
+          <a class="cart__payment-and-adress__button" href="#"> GET A QUOTE </a>
         </form>
 
-        <a class="cart__payment-and-adress__button" href="#"> GET A QUOTE </a>
+
         <div class="cart__payment-and-adress__checkout">
           <div class="cart__payment-and-adress__checkout__container-clause">
             <span class="cart__payment-and-adress__checkout__container-clause__clause"
@@ -180,10 +182,12 @@
               >$900</span
             > </span
             >
-           <a href="#" class="cart__payment-and-adress__checkout__button" >
+
+        </div>
+        <a href="#" class="button" >
             PROCEED TO CHECKOUT</a
           >
-        </div>
+          <!-- cart__payment-and-adress__checkout__ -->
       </div>
     </main>
     <div class="subscribe_and_review center">

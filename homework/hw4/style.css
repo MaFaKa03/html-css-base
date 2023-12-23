@@ -31,6 +31,10 @@
   gap: 33px;
 }
 
+.link-menu:hover svg path {
+  fill: #F16D7F;
+}
+
 .footer_site {
   background-color: #222224;
   display: flex;
