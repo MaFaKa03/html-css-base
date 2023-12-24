@@ -1,0 +1,126 @@
+$countBulb: 3;
+.bg {
+    background-image: url(img/wallper.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+input {
+    visibility: hidden;
+    position: relative;
+}
+
+label {
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url(img/lamp.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    // display: block;
+    // width: 3rem;
+    // height: 3rem;
+    // cursor: pointer;
+    // position: absolute;
+    // opacity: 0;
+    animation: bulbAnimation 3s infinite;
+    // z-index: 1;
+}
+
+.score {
+    margin-top: 540px;
+    margin-left: 50%;
+    width: 20px;
+    height: 20px;
+
+    &::before {
+        content: counter(score);
+        color: white;
+    }
+}
+
+input[type="checkbox"]:checked {
+    counter-increment: score;
+}
+
+
+
+
+
+
+
+
+
+
+// label {
+//     display: block;
+//     width: 3rem;
+//     height: 3rem;
+//     cursor: pointer;
+//     position: absolute;
+//     opacity: 0;
+//     animation: bulbAnimation 3s infinite;
+// }
+
+label svg {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    counter-reset: score;
+}
+
+@keyframes lamp-appear {
+    0% {
+        opacity: 0;
+        filter: none;
+    }
+
+    50% {
+        opacity: 1;
+        transform: 3s;
+        filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+    }
+
+    100% {
+        opacity: 0;
+        filter: none;
+    }
+}
+
+@keyframes refillLamp {
+    0% {
+        fill: #ffffff;
+    }
+
+    50% {
+        fill: rgb(245, 245, 113);
+    }
+
+    100% {
+        fill: #ffffff;
+    }
+}
+
+@for $i from 1 through $countBulb {
+    #bulb#{$i}label {
+        top: random(90) + vh;
+        left: random(90) + vw;
+        animation: lamp-appear 6s infinite #{$i}s;
+    }
+
+    #bulb#{$i}label path {
+        animation: refillLamp 6s infinite #{$i}s;
+    }
+
+}

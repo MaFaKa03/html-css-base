@@ -1,0 +1,108 @@
+.bg {
+  background-image: url(img/wallper.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+input {
+  visibility: hidden;
+  position: relative;
+}
+
+label {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url(img/lamp.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  animation: bulbAnimation 3s infinite;
+}
+
+.score {
+  margin-top: 540px;
+  margin-left: 50%;
+  width: 20px;
+  height: 20px;
+}
+.score::before {
+  content: counter(score);
+  color: white;
+}
+
+input[type=checkbox]:checked {
+  counter-increment: score;
+}
+
+label svg {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  counter-reset: score;
+}
+
+@keyframes lamp-appear {
+  0% {
+    opacity: 0;
+    filter: none;
+  }
+  50% {
+    opacity: 1;
+    transform: 3s;
+    filter: drop-shadow(0 0 20px rgb(245, 245, 113));
+  }
+  100% {
+    opacity: 0;
+    filter: none;
+  }
+}
+@keyframes refillLamp {
+  0% {
+    fill: #ffffff;
+  }
+  50% {
+    fill: rgb(245, 245, 113);
+  }
+  100% {
+    fill: #ffffff;
+  }
+}
+#bulb1label {
+  top: 44vh;
+  left: 68vw;
+  animation: lamp-appear 6s infinite 1s;
+}
+
+#bulb1label path {
+  animation: refillLamp 6s infinite 1s;
+}
+
+#bulb2label {
+  top: 81vh;
+  left: 23vw;
+  animation: lamp-appear 6s infinite 2s;
+}
+
+#bulb2label path {
+  animation: refillLamp 6s infinite 2s;
+}
+
+#bulb3label {
+  top: 46vh;
+  left: 9vw;
+  animation: lamp-appear 6s infinite 3s;
+}
+
+#bulb3label path {
+  animation: refillLamp 6s infinite 3s;
+}/*# sourceMappingURL=style.css.map */
